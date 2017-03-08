@@ -1,0 +1,37 @@
+
+body {
+	background-color: aliceblue;
+	font-family: 'PT Sans', sans-serif;
+}
+
+h1 {
+	margin-left: 150px;
+}
+
+#pageContainer { 
+	display: flex;
+	flex-direction: rows;
+    flex-flow: row wrap;
+    max-width: 90%;
+    margin: auto;
+}
+
+.courseContainer {
+	background-color: snow;
+    width: 20%;
+    border: 1px solid slategray;
+	border-radius: 8px;
+    margin: 10px 10px;
+    align-content: space-around;
+}
+
+.courseHeader {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.badgeURL {
+	height: 50%;
+	width: 50%;
+	margin-left: 25%;
+}
