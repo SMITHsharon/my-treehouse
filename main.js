@@ -9,25 +9,7 @@ var myRequest = new XMLHttpRequest();
 function executeThisCodeAfterFileLoaded(){
 
 	var xhrData = JSON.parse(this.responseText);
-	console.log("my-Treehouse Data: ", xhrData);
-	console.log("data.points :: ", xhrData.points);
-	outputPoints(xhrData.points);
-	outputBadges(xhrData.badges);
 	writeToDOM(xhrData.badges);
-}
-
-function outputBadges (dataObject) {
-
-	for (var i in dataObject) {
-		console.log("i: value :: ", i, dataObject[i]);
-	}
-}
-
-function outputPoints (dataObject) {
-
-	for (var i in dataObject) {
-		console.log("i: value :: ", i, dataObject[i]);
-	}
 }
 
 function executeThisCodeAfterFileFails(){
@@ -35,8 +17,6 @@ function executeThisCodeAfterFileFails(){
 }
 
 function writeToDOM (dataObject) {
-// console.log("writingToDOM");
-// console.log("dataObject.points.length :: ", dataObject.points.length);
 
 	var courseString = "";
 	var currentCourse;
